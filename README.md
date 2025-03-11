@@ -15,7 +15,7 @@ PK_Java 개발 과정
     1. Powershell 오픈
     2. pull 내려받기
         ```shell
-        PS C:\Users\jszxr> docker pull doctorkirk/oracle-19c
+        > docker pull oracleinanutshell/oracle-xe-11g
         ```
     3. 다운로드 이미지 확인
         ```shell
@@ -23,7 +23,7 @@ PK_Java 개발 과정
         ```
     4. 도커 컨테이너 실행
         ```shell
-        > docker run --name oracle19c -p 1522:1522 -e ORACLE_SID=ORCL -e ORACLE_PWD=12345 -e ORACLE_CHARACTERSET=KO16MSWIN949 --restart=always doctorkirk/oracle-19c
+        > docker run --name oracle11g -d -p 1521:1521 --restart=always oracleinanutshell/oracle-xe-11g
         ```
         - 1522: Oracle 기본 port(항구)
     5. 도커 실행 확인
@@ -35,7 +35,10 @@ PK_Java 개발 과정
 
         SQL > 
         ```
-    7. DBeaver 접속속
+    7. DBeaver 접속
+        - Connection > Select your DB > Oracle 선택
+
+        <img src="./image/db001.png" width="650">
 
 -DBeaver 툴 설치
 
@@ -56,4 +59,26 @@ PK_Java 개발 과정
 
 
 - SELECT 기본
+    - 데이터 조회 시 사용하는 기본명령어
+    ```sql
+    -- 기본 주석(한 줄)
+    /*
+        여러줄 주석
+    */
+    SELECT [ALL|DISTINCT][*|컬럼명(들)]
+        FROM 테이블명(들)
+    [WHERE 검색조건(들)]
+    [GROUP BY 속성명(들)]
+    [HAVING 집계함수조건(들)]
+    [ORDER BY 정렬속성(들) ASC|DESC]
+    [WITH ROLLUP]
+    ```
+    - 기본 쿼리 학습: [SQL](./day01/sql01_select기본.sql)
+        1. 기본 SELECT
+        2. WHERE 조건절
+        3. NULL(!)
+        4. ORDER BY 정렬
+        5. 집합
+
+## 2일차
 
