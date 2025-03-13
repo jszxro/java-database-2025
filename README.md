@@ -104,4 +104,28 @@ PK_Java 개발 과정
     - LONG(n) - 원시 이진 데이터, 최대 2G바이트
     - CLOB - 대용량 텍스트 데이터 타입, 최대 4G
     - BLOB - 대용량 바이너리 데이터 타입, 최대 4G
-    - BFILE - 외부 파일에 저장된 데이터터
+    - BFILE - 외부 파일에 저장된 데이터
+
+## 3일차
+- JOIN
+    - ERD(Entity Relationship Diagram): 개체 관계 다이어그램
+        - PK(Primary Key): 기본키, 중복 X UNIQUE NOT NULL
+        - FK(Foreign Key): 외래키, 다른 엔티티의 PK(관계 연결)
+        - Relationship: 부모 엔티티와 자식 엔티티 간의 연관, 부모 1은 자식 n을 가질 수 있음
+    - 카티션곱
+    - 내부조인
+    - 외부조인
+- DDL
+    - CREATE - TABLE, VIEW, PROCEDURE, FUNCTION
+        ```sql
+        CREATE TABLE 테이블명(
+            첫번째_컬럼  타입형  제약조건,
+            두번째_컬럼  타입형  제약조건,
+            ...
+            마지막_컬럼  타입형  제약조건
+            [,
+            기본키, 외래키 등의의 옵션
+            ]
+        );
+
+        ```
