@@ -227,4 +227,7 @@ PK_Java 개발 과정
     SELECT 
     ```
 
+## 7일차
+- Oracle 연동 Python GUI 프로그램 개발
+
 
