@@ -42,3 +42,5 @@ Python GUI - Oracle 연동 프로그램램
 - Python 오라클 연동 테스트
 - QtDesigner로 화면 구성
 - PyQt로 Oracle 연동 CRUD 구현현
+
+- Python 오라클 연동 테스트트
