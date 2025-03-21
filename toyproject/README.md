@@ -41,6 +41,6 @@ Python GUI - Oracle 연동 프로그램램
 - Student 테이블 생성, 더미데이터 추가
 - Python 오라클 연동 테스트
 - QtDesigner로 화면 구성
-- PyQt로 Oracle 연동 CRUD 구현현
+- PyQt로 Oracle 연동 CRUD 구현
 
-- Python 오라클 연동 테스트트
+- Python 오라클 연동 테스트
