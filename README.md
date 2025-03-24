@@ -227,9 +227,12 @@ PK_Java 개발 과정
     SELECT 
     ```
 
-## 7일차
+## 7, 8, 9일차
 - Oracle 연동 Python GUI 프로그램 개발
 
+## 10일차
+- HR SQL 연습
+- 코딩테스트 진행
 
 
 
